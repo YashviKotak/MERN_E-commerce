@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import colors from "colors";
 const connectDB = async () => {
   try {
-    const conn = await mongoose.connect('mongodb://127.0.0.1:27017/Ecommerce');
+    const conn = await mongoose.connect('mongodb+srv://yashvi:9428291198@cluster0.bjtxavf.mongodb.net/Ecommerce');
     console.log(
       `Conneted To Mongodb Databse ${conn.connection.host}`.bgMagenta.white
     );
